@@ -7,10 +7,8 @@
  *
  */
 
-include __DIR__.'/vendor/autoload.php';
-
-use lfkeitel\phptotp\Totp;
-use lfkeitel\phptotp\Base32;
+require_once('Totp.php');
+require_once('Base32.php');
 
 $key = '';
 
@@ -21,8 +19,9 @@ if ($argc == 2) {
     $key = trim(fgets(STDIN));
 
     if ($key == '') {
-        echo "No key provided\n";
-        exit(1);
+        $bytes = openssl_random_pseudo_bytes($i, $cstrong);
+        $key   = Base32::encode($bytes);
+        echo "The new key is: ".$key."\n";
     }
 }
 
