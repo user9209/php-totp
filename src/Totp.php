@@ -1,6 +1,6 @@
 <?php
 
-require_once('Htop.php');
+require_once('Hotp.php');
 
 class Totp extends Hotp
 {
