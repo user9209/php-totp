@@ -1,8 +1,6 @@
 <?php
 # Original source: https://github.com/bbars/utils/tree/master/php-base32-encode-decode
 
-namespace lfkeitel\phptotp;
-
 class Base32
 {
     const BITS_5_RIGHT = 31;
