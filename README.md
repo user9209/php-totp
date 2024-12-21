@@ -13,8 +13,9 @@ wget -O Totp.php https://raw.githubusercontent.com/user9209/php-totp/refs/heads/
 **Examples:**
 
 ```
-wget -O generate.php https://raw.githubusercontent.com/user9209/php-totp/refs/heads/directUse/src/generate.php
-wget -O validate-demo.php https://raw.githubusercontent.com/user9209/php-totp/refs/heads/directUse/src/validate-demo.php
+wget -O generate.php https://raw.githubusercontent.com/user9209/php-totp/refs/heads/directUse/generate.php
+wget -O validate-demo.php https://raw.githubusercontent.com/user9209/php-totp/refs/heads/directUse/validate-demo.php
+wget -O validate-demo-two-token.php https://raw.githubusercontent.com/user9209/php-totp/refs/heads/directUse/validate-demo-two-token.php
 ```
 
 **Modify or delete `generate.php` and `validate-demo.php`**
@@ -22,6 +23,27 @@ wget -O validate-demo.php https://raw.githubusercontent.com/user9209/php-totp/re
 To get a QR code for your secret you can use e.g. [Quick-and-Duty-Java-Code](https://github.com/user9209/quick-and-duty-totp-example).
 
 *Done*
+
+### Validate Demo Two Token
+
+See `validate-demo-two-token.php`.
+
+#### Automated Script with wget
+
+```
+TOKEN1=123456
+TOKEN2=654321
+wget -O install.sh https://www.example.com/ssh/?token1=$TOKEN1&token2=$TOKEN2
+
+chmod 500 install.sh
+./install.sh
+```
+
+#### Use a bot to get the vaild link
+
+Use e.g. a matrix bot sending you the link with the valid token already set.  
+Send a message to the bot, get as answer the link.
+
 
 ## Installation (Checkout branch 'master'!)
 
