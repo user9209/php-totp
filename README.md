@@ -2,7 +2,26 @@
 
 This is a simple PHP library and script that will generate HOTP and TOTP tokens. The library fully conforms to RFCs 4226 and 6238. All hashing algorithms are supported as well as the length of a token and the start time for TOTP.
 
-## Installation
+## Installation (Direct usage! Checkout branch 'directUse')
+
+```
+wget -O Base32.php https://raw.githubusercontent.com/user9209/php-totp/refs/heads/directUse/src/Base32.php
+wget -O Hotp.php https://raw.githubusercontent.com/user9209/php-totp/refs/heads/directUse/src/Hotp.php
+wget -O Totp.php https://raw.githubusercontent.com/user9209/php-totp/refs/heads/directUse/src/Totp.php
+```
+
+**Examples:**
+
+```
+wget -O generate.php https://raw.githubusercontent.com/user9209/php-totp/refs/heads/directUse/src/generate.php
+wget -O validate-demo.php https://raw.githubusercontent.com/user9209/php-totp/refs/heads/directUse/src/validate-demo.php
+```
+
+**Modify or delete `generate.php` and `validate-demo.php`**
+
+*Done*
+
+## Installation (Checkout branch 'master'!)
 
 Add the following to your composer.json:
 
