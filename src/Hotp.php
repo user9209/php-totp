@@ -1,7 +1,5 @@
 <?php
 
-namespace lfkeitel\phptotp;
-
 class Hotp
 {
     protected $algo;
