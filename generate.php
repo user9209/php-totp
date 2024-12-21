@@ -19,7 +19,7 @@ if ($argc == 2) {
     $key = trim(fgets(STDIN));
 
     if ($key == '') {
-        $bytes = openssl_random_pseudo_bytes($i, $cstrong);
+        $bytes = openssl_random_pseudo_bytes(20, $cstrong);
         $key   = Base32::encode($bytes);
         echo "The new key is: ".$key."\n";
     }
