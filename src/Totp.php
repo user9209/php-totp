@@ -1,6 +1,6 @@
 <?php
 
-namespace lfkeitel\phptotp;
+require_once('Htop.php');
 
 class Totp extends Hotp
 {
