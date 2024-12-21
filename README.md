@@ -19,6 +19,8 @@ wget -O validate-demo.php https://raw.githubusercontent.com/user9209/php-totp/re
 
 **Modify or delete `generate.php` and `validate-demo.php`**
 
+To get a QR code for your secret you can use e.g. [Quick-and-Duty-Java-Code](https://github.com/user9209/quick-and-duty-totp-example).
+
 *Done*
 
 ## Installation (Checkout branch 'master'!)
